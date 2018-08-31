@@ -1,0 +1,8 @@
+<div [ngClass]="{'menu-active':mobileMenu.state === 'active'}">
+  <button id="mobile-menu-trigger" mobile-menu-trigger [target]="mobileMenu">
+    <i *ngIf="mobileMenu.state === 'active'" class="material-icons">close</i>
+    <i *ngIf="mobileMenu.state === 'inactive'" class="material-icons">menu</i> 
+  </button> 
+
+  <app-mobile-menu #mobileMenu [menu]="mobileMenu" [ngClass]="mobileMenu.state"></app-mobile-menu>
+</div>

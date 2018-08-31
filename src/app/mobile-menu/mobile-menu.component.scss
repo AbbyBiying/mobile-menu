@@ -1,0 +1,10 @@
+.menu-container {
+  display: flex; 
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+ul {
+  list-style: none;
+}
